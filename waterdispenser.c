@@ -9,6 +9,7 @@ int main () {
     printf("Water dispenser\n");
     printf("Input your money\n");
     scanf("%d",&money);
+    printf("Money %d\n",money);
 
     //Input water type
     printf("Choose your water\n");
