@@ -7,16 +7,17 @@ int main () {
 
     //Input money
     printf("Water dispenser\n");
+    
+    printf("1. Cola 30 bart\n");
+    printf("2. Pepsi 30 bart\n");
+    printf("3. Est 30 bart\n");
+    printf("4. Big cola 40 bart\n");
     printf("Input your money\n");
     scanf("%d",&money);
     printf("Money %d bart\n",money);
 
     //Input water type
     printf("Choose your water\n");
-    printf("1. Cola\n");
-    printf("2. Pepsi\n");
-    printf("3. Est\n");
-    printf("4. Big cola\n");
     scanf("%d",&watertype);
 
     int cost = 0;
