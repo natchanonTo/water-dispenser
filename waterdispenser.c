@@ -40,7 +40,7 @@ int main () {
     else if (watertype==2)
     {
         cost = 30;
-        printf("You choose cola\n");
+        printf("You choose pepsi\n");
         while (money<cost)
         {
             printf("Input more money\n");
@@ -55,7 +55,7 @@ int main () {
     else if (watertype==3)
     {
         cost = 30;
-        printf("You choose cola\n");
+        printf("You choose est\n");
         while (money<cost)
         {
             printf("Input more money\n");
@@ -70,7 +70,7 @@ int main () {
     else if (watertype==4)
     {
         cost = 40;
-        printf("You choose cola\n");
+        printf("You choose big cola\n");
         while (money<cost)
         {
             printf("Input more money\n");
@@ -87,6 +87,8 @@ int main () {
         printf("Invalid water type\n");
         printf("Withdraw money %d bart\n",money);
     }
+
+
     return 0 ;
 
 }
