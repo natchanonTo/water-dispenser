@@ -25,69 +25,73 @@ int main () {
     if (watertype==1)
     {
         cost = 30;
-        printf("You choose cola\n");
-        while (money<cost)
+        
+        if (money<cost)
         {
-            printf("Input more money\n");
-            scanf("%d",&extramoney);
-            money += extramoney;
-            
-        }
-        money -= cost;
-        printf("Withdraw money %d bart",money);
+            printf("Withdraw money %d bart",money);
 
+        }
+        else
+        {
+            printf("You choose cola\n");
+            money -= cost;
+            printf("Withdraw money %d bart",money);
+
+        }
     }
     else if (watertype==2)
     {
         cost = 30;
-        printf("You choose pepsi\n");
-        while (money<cost)
-        {
-            printf("Input more money\n");
-            scanf("%d",&extramoney);
-            money += extramoney;
             
-        }
-        money -= cost;
-        printf("Withdraw money %d bart",money);
+        if (money<cost)
+        {
+            printf("Withdraw money %d bart",money);
 
+        }
+        else
+        {
+            printf("You choose pepsi\n");
+            money -= cost;
+            printf("Withdraw money %d bart",money);
+        }
     }
     else if (watertype==3)
     {
         cost = 30;
-        printf("You choose est\n");
-        while (money<cost)
-        {
-            printf("Input more money\n");
-            scanf("%d",&extramoney);
-            money += extramoney;
-            
-        }
-        money -= cost;
-        printf("Withdraw money %d bart",money);
 
+        if (money<cost)
+        {
+            printf("Withdraw money %d bart",money);
+
+        }
+        else
+        {
+            printf("You choose est\n");
+            money -= cost;
+            printf("Withdraw money %d bart",money);
+        }
     }   
     else if (watertype==4)
     {
         cost = 40;
-        printf("You choose big cola\n");
-        while (money<cost)
-        {
-            printf("Input more money\n");
-            scanf("%d",&extramoney);
-            money += extramoney;
-            
-        }
-        money -= cost;
-        printf("Withdraw money %d bart",money);
 
+        if (money<cost)
+        {
+            printf("Withdraw money %d bart",money);
+
+        }
+        else
+        {
+            printf("You choose big cola\n");
+            money -= cost;
+            printf("Withdraw money %d bart",money);
+        }
     }
     else
     {
         printf("Invalid water type\n");
         printf("Withdraw money %d bart\n",money);
     }
-
 
     return 0 ;
 
